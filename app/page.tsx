@@ -54,16 +54,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-100 to-gray-200 flex justify-center">
-      {/* Left AdSense column */}
-      <div className="hidden lg:block w-1/6 p-4">
-        <div className="bg-gray-300 h-full flex items-center justify-center">
-          <p className="text-gray-600">AdSense Gauche</p>
-        </div>
-      </div>
-
       {/* Main content */}
-      <div className="w-full lg:w-2/3 p-4 flex flex-col items-center justify-start">
-        <Card className="w-full max-w-2xl mb-8">
+      <div className="w-full max-w-2xl p-4 flex flex-col items-center justify-start">
+        <Card className="w-full mb-8">
           <CardHeader>
             <CardTitle className="text-2xl font-bold text-center">Trouver ma convention collective</CardTitle>
             <CardDescription className="text-center">
@@ -100,13 +93,8 @@ export default function Home() {
           </CardContent>
         </Card>
 
-        {/* AdSense Space 1 */}
-        <div className="w-full max-w-2xl h-24 bg-gray-300 my-8 flex items-center justify-center">
-          <p className="text-gray-600">Espace AdSense</p>
-        </div>
-
         {conventionCollective && (
-          <Card className="w-full max-w-2xl mb-8">
+          <Card className="w-full mb-8">
             <CardHeader>
               <CardTitle className="text-xl font-bold">{conventionCollective.title}</CardTitle>
             </CardHeader>
@@ -130,18 +118,6 @@ export default function Home() {
 
         {/* Display markdown content */}
         {markdownContent && <MarkdownDisplay content={markdownContent} />}
-
-        {/* AdSense Space 2 */}
-        <div className="w-full max-w-2xl h-24 bg-gray-300 mt-8 flex items-center justify-center">
-          <p className="text-gray-600">Espace AdSense</p>
-        </div>
-      </div>
-
-      {/* Right AdSense column */}
-      <div className="hidden lg:block w-1/6 p-4">
-        <div className="bg-gray-300 h-full flex items-center justify-center">
-          <p className="text-gray-600">AdSense Droite</p>
-        </div>
       </div>
     </div>
   );
