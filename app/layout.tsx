@@ -1,12 +1,12 @@
-import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'SIRET Search | Convention Collective Finder',
-  description: 'Search for convention collective using SIRET number for French companies',
+  title: 'Trouvez votre convention collective',
+  description: 'Trouvez votre convention collective en entrant votre numéro SIRET',
 };
 
 export default function RootLayout({

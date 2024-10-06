@@ -1,3 +1,10 @@
 # convention-collective
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/aureliendebord/convention-collective)
+Trouvez votre convention collective en entrant votre numéro SIRET.
+
+## Technologies utilisées
+
+- Next.js
+- TailwindCSS
+- Shadcn/UI
+- Vercel
