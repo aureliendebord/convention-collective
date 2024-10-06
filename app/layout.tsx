@@ -24,6 +24,17 @@ export default function RootLayout({
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
+        <Script
+          defer
+          data-domain="trouver-ma-convention-collective.fr"
+          src="https://plausible.io/js/script.outbound-links.js"
+          strategy="afterInteractive"
+        />
+        <Script id="plausible-setup" strategy="afterInteractive">
+          {`
+            window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }
+          `}
+        </Script>
       </head>
       <body className={inter.className}>{children}</body>
     </html>
