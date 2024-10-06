@@ -77,7 +77,7 @@ export default function Home() {
                 <div className="flex space-x-2">
                   <Input
                     id="siret"
-                    type="number"
+                    type="number "
                     placeholder="Entrez votre numéro SIRET"
                     value={siret}
                     onChange={(e) => setSiret(e.target.value)}
@@ -121,7 +121,7 @@ export default function Home() {
                         synonym.charAt(0).toUpperCase() + synonym.slice(1)
                       ).join(', ')
                     : 'N/A'}</strong></p>
-                  <p className="mt-2">Cette convention collective s'applique aux entreprises du secteur {conventionCollective.title.toLowerCase()}. Elle définit les droits et obligations de l'employeur et du salarié, couvrant des aspects tels que les heures de travail, les congés, la rémunération et d'autres conditions spécifiques de l'emploi dans ce secteur.</p>
+                  <p className="mt-2">Cette convention collective s&apos;applique aux entreprises du secteur {conventionCollective.title.toLowerCase()}. Elle définit les droits et obligations de l&apos;employeur et du salarié, couvrant des aspects tels que les heures de travail, les congés, la rémunération et d&apos;autres conditions spécifiques de l&apos;emploi dans ce secteur.</p>
                 </AlertDescription>
               </Alert>
             </CardContent>
